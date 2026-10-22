@@ -1,23 +1,104 @@
 aid: worley
+
 name: Worley
-description: 'Worley is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Worley is an ASX-listed global professional services company that describes itself as an accountable partner
+  for EPCM (engineering, procurement and construction management) and project delivery, supporting energy, chemicals and resources
+  customers from concept to operational readiness. Its site says it is more than 40,000 energy, chemicals and resources experts
+  in over 40 countries, offering full project delivery, Worley Consulting, and specialist technology businesses such as Worley
+  Chemetics and Worley Comprimo. Surfaced via the australia-apidays-2026 harvest; no public developer portal or API documentation
+  was found on worley.com.
+
 url: https://raw.githubusercontent.com/api-evangelist/worley/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Engineering
+- Energy
+- Chemicals
+- Resources
+- Construction
+- Consulting
+- Professional Services
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.worley.com/-/media/images/worley/logos/worley_logo_pos_brandmark.png
+
 common:
+- type: LLMsTxt
+  url: llms/worley-llms.txt
+- type: WellKnown
+  url: well-known/worley-well-known.yml
+- type: Hosts
+  url: hosts/worley-hosts.yml
+- type: Vendors
+  url: vendors/worley-vendors.yml
+- type: Support
+  url: https://support.worley.com/support
+- type: DomainSecurity
+  url: security/worley-domain-security.yml
 - type: Website
   url: https://worley.com/
+- type: Newsroom
+  url: https://www.worley.com/en/insights/our-news
+- type: Blog
+  url: https://www.worley.com/en/insights/our-thinking
+- type: AboutUs
+  url: https://www.worley.com/en/about-us
+- type: Leadership
+  url: https://www.worley.com/en/about-us/our-people/leadership
+- type: Contact
+  url: https://www.worley.com/en/contact-us
+- type: Careers
+  url: https://www.worley.com/en/careers
+- type: InvestorRelations
+  url: https://www.worley.com/en/investor-relations
+- type: PrivacyPolicy
+  url: https://www.worley.com/en/site-services/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/worley/
+- type: Twitter
+  url: https://twitter.com/Worley_ECR
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website worley.com verified (title "Welcome to Worley - Worley"). No developer portal, API docs, pricing or terms-of-service
+    page found; support.worley.com is an internal ServiceNow Service Portal, not recorded; /en/site-services/terms-of-use
+    returned 404.
+  evidence:
+  - url: https://worley.com/
+    status: 200
+  - url: https://www.worley.com/en/about-us/where-we-operate
+    status: 200
+  - url: https://support.worley.com/support
+    status: 200
+  - url: https://www.worley.com/en/site-services/terms-of-use
+    status: 404
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 14
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

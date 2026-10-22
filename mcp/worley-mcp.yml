@@ -1,0 +1,21 @@
+name: Worley MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: absent
+source:
+- https://www.worley.com/llms.txt
+- https://comms.worley.com/api/mcp
+- https://jobs.worley.com/mcp
+description: >-
+  No official Worley MCP server is documented or advertised. Worley Limited publishes no
+  public API documentation or OpenAPI contract, so no candidate tool list can be derived.
+  Pre-flight probes of https://comms.worley.com/api/mcp and https://jobs.worley.com/mcp both
+  returned HTTP 401, but a control path on the same hosts also returned 401 (the edge
+  authenticates before it routes), so these responses do not indicate an MCP server.
+  A web search (2026-10-22) found no Worley MCP server listing.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

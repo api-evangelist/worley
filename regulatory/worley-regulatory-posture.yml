@@ -1,0 +1,90 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.worley.com/en/site-services/privacy
+scope_note: >-
+  Worley is an ASX-listed engineering and professional-services company with no public API or developer
+  platform. Legal pages linked from the www.worley.com footer and read for this posture: Privacy Policy,
+  Cookie Notice, Accessibility and Modern Slavery Statement (not relevant to these signals). No trust center,
+  subprocessor list, AI transparency statement or incident-notification commitment was found. Only signals
+  these pages speak to are recorded.
+signals:
+  data_subject_request:
+    url: https://www.worley.com/en/site-services/privacy
+    section: Your rights
+    rights_named: [access, rectification, withdraw consent, erasure, restriction, portability, objection, complaint to authority]
+    evidence:
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Data protection law provides individuals with certain rights, including the right to: access, rectify,
+        withdraw consent, erase, restrict, transport, and object to the processing of, their personal information.
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You may request that we erase your personal information and we will comply, unless there is a lawful
+        reason for not doing so.
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Depending on your jurisdiction, you may have additional rights (e.g., California “Do Not Sell or Share,”
+        Brazil LGPD rights, South Africa POPIA rights, Singapore PDPA access and correction rights, Canada PIPEDA
+        access rights).
+    note: >-
+      GDPR-style rights are named, with jurisdiction-specific additions. Access requests go through a linked
+      request form, and the page says proof of identity and a fee may be required. No response SLA is stated.
+  data_residency:
+    url: https://www.worley.com/en/site-services/privacy
+    section: International transfer of personal data
+    evidence:
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In particular, your personal data may be transferred throughout the Worley group and to our outsourced
+        service providers located abroad. Where required, we implement appropriate safeguards such as Standard
+        Contractual Clauses (SCCs), adequacy decisions, intra-group agreements, and supplementary measures.
+    note: >-
+      This is a cross-border transfer disclosure, not a residency commitment. Data may leave the EU, and the
+      safeguards are SCCs, adequacy decisions and intra-group agreements. No storage region is named.
+  subprocessors:
+    url: https://www.worley.com/en/site-services/privacy
+    section: Disclosure of personal information
+    evidence:
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We require third parties to whom we disclose personal information to adhere to adequate security,
+        confidentiality and data protection requirements consistent with global standards.
+    note: >-
+      The page says data goes to outsourced service providers (one example is a data center provider) and
+      that recipients have to meet security requirements. No named subprocessor list is published.
+  data_retention:
+    url: https://www.worley.com/en/site-services/privacy
+    section: Retention of personal information
+    evidence:
+    - source: https://www.worley.com/en/site-services/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Your personal information will be retained for as long as it is necessary to carry out the purposes set
+        out in this privacy policy (unless longer retention is required by the applicable law).
+    note: Purpose-bound retention with no fixed periods. The page says anonymized or aggregated data may be kept for statistics.
+  accessibility_conformance:
+    url: https://www.worley.com/en/site-services/accessibility
+    section: Accessibility
+    standard: WCAG 2.0 Level A (self-assessed belief)
+    evidence:
+    - source: https://www.worley.com/en/site-services/accessibility
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We have made every effort to ensure that this website meets or exceeds the relevant legal requirements.
+    note: >-
+      The next sentence says Worley believes the site meets or exceeds the Level A criteria of the WCAG WAI 2.0
+      guidelines. That sentence is split across a link in the HTML, so it is paraphrased here rather than quoted.
+      This is a self-assessment of the website only, not a conformance report.

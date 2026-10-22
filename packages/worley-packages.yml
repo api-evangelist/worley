@@ -1,0 +1,11 @@
+generated: '2026-10-22'
+method: none
+note: >-
+  Checked, nothing found. Worley publishes no developer documentation, SDK or CLI. registry.npmjs.org/worley
+  and pypi.org/pypi/worley/json both returned 404; api.github.com/orgs/worley returned 404; a web search found
+  only "worleyjs" on jsDelivr, an unrelated Worley-noise graphics library (not first-party).
+checked:
+- https://registry.npmjs.org/worley
+- https://pypi.org/pypi/worley/json
+- https://api.github.com/orgs/worley
+packages: []

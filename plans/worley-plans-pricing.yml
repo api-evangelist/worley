@@ -1,0 +1,13 @@
+name: Worley pricing
+generated: '2026-10-22'
+method: none
+audience: unclear
+pricing_basis: none
+published: false
+plan_count: 0
+note: >-
+  Worley sells engineering and professional services by engagement; no pricing or plans page and no API
+  product exist on worley.com (dossier site_links and the homepage list none).
+delivery:
+  model: unclear
+plans: []

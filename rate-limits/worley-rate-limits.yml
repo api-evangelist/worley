@@ -1,0 +1,6 @@
+name: Worley rate limits
+generated: '2026-10-22'
+method: none
+limit_count: 0
+note: Worley publishes no public API or developer documentation, so no rate limits are documented.
+limits: []

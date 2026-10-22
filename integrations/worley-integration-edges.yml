@@ -1,0 +1,20 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/worley/integrations
+- https://n8n.io/integrations/worley/
+- https://composio.dev/toolkits/worley
+- https://monid.ai/tools/worley
+checked:
+- https://zapier.com/apps/worley/integrations
+- https://n8n.io/integrations/worley
+- https://www.make.com/en/integrations/worley
+- https://worley.com/
+- https://composio.dev/toolkits/worley
+- https://monid.ai/tools/worley
+- https://n8n.io/integrations/worley/
+summary: No integration marketplace listings, integrations page or API contract found. Worley is an engineering
+  professional-services company with no published developer platform.
+marketplace_apps: []
+edges: []
+templates: []
